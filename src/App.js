@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
 import BabyNames from './BabyNames';
-import SearchBox from './SearchBox';
 
 function App () {
   return (
     <div className="App">
-      <div class="search">
+      {/* <div class="search">
         <SearchBox />
-      </div>
+      </div> */}
 
-      <div class="names">
+      <div class="names" id="babysNames">
         <BabyNames />
+
       </div>
 
     </div>
