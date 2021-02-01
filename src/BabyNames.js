@@ -1,5 +1,7 @@
 import babyNamesData from './babyNamesData.json';
 import React, {useState} from 'react';
+import girl from './images/girl.png';
+import boy from './images/boy.png';
 
 // let sortedNames = [];
 
@@ -43,8 +45,25 @@ const BabyNames = () => {
     // }
   };
 
+  const girlsNames = e => {
+    let girlsOnly = [];
+    e.preventDefault ();
+    girlsOnly = babyNamesData.filter (item => {
+      return item.sex == 'f';
+    });
+    setSortedNames (girlsOnly);
+  };
+  const boysNames = e => {
+    let boysOnly = [];
+    e.preventDefault ();
+    boysOnly = babyNamesData.filter (item => {
+      return item.sex == 'm';
+    });
+    setSortedNames (boysOnly);
+  };
+
   return (
-    <div className='container'>
+    <div className="container">
       <div className="search">
         <div className="searchBar">
           <label>Search </label>
@@ -55,6 +74,18 @@ const BabyNames = () => {
             onChange={changeHandler}
             placeholder="SEARCH HERE ..."
           />
+        </div>
+        <div>
+          {/* <label>GIRLS NAMES</label> */}
+          <img
+            class="gender"
+            src={girl}
+            alt="girls names"
+            onClick={girlsNames}
+          />
+          {/* <label>BOYS NAMES</label> */}
+
+          <img class="gender" src={boy} alt="boys names" onClick={boysNames} />
         </div>
       </div>
 

@@ -13,6 +13,11 @@ code {
 }
 .container {
 }
+.gender {
+  width: 5%;
+  height: auto;
+  margin: 0 2rem 0rem 0;
+}
 .balloon {
   display: inline-block;
   width: 120px;
@@ -139,6 +144,7 @@ code {
   height: 10rem;
   background-color: blue;
   opacity: 0.5;
+  margin-bottom: 4rem;
 }
 
 .names {
