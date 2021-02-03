@@ -49,7 +49,7 @@ const BabyNames = () => {
     let girlsOnly = [];
     e.preventDefault ();
     girlsOnly = babyNamesData.filter (item => {
-      return item.sex == 'f';
+      return item.sex === 'f';
     });
     setSortedNames (girlsOnly);
   };
@@ -57,7 +57,7 @@ const BabyNames = () => {
     let boysOnly = [];
     e.preventDefault ();
     boysOnly = babyNamesData.filter (item => {
-      return item.sex == 'm';
+      return item.sex === 'm';
     });
     setSortedNames (boysOnly);
   };
@@ -88,9 +88,8 @@ const BabyNames = () => {
           <img class="gender" src={boy} alt="boys names" onClick={boysNames} />
         </div>
       </div>
-
       {sortedNames.map (item => {
-        return item.sex == 'f'
+        return item.sex === 'f'
           ? <div className="balloon2"><h2 id="names1">{item.name}</h2></div>
           : <div className="balloon" id="names1">
               <h2 id="names">{item.name}</h2>
