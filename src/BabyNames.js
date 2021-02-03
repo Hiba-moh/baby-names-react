@@ -64,7 +64,7 @@ const BabyNames = () => {
 
   const findLetter = id => {
     let filterFirstLetter;
-    filterFirstLetter = sortedNames.filter (item => {
+    filterFirstLetter = babyNamesData.filter (item => {
       return item.name.charAt (0).toLocaleLowerCase () === id;
     });
     setSortedNames (filterFirstLetter);
