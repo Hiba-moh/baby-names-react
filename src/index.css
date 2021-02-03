@@ -13,6 +13,25 @@ code {
 }
 .container {
 }
+.letters {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.oneLetter {
+  width: 3rem;
+  height: 3rem;
+  font-size: xx-large;
+  font-weight: bold;
+  color: #bd0e3a;
+  background-color: rgb(46, 100, 189);
+  border: 3px solid #bd0e3a;
+}
+.oneLetter:hover {
+  color: white;
+  cursor: pointer;
+}
 .gender {
   width: 5%;
   height: auto;
@@ -144,7 +163,7 @@ code {
   height: 10rem;
   background-color: blue;
   opacity: 0.5;
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
 }
 
 .names {
