@@ -64,10 +64,13 @@ const BabyNames = () => {
 
   const findLetter = id => {
     let filterFirstLetter;
-    filterFirstLetter = babyNamesData.filter (item => {
+    filterFirstLetter = sortedNames.filter (item => {
       return item.name.charAt (0).toLocaleLowerCase () === id;
     });
     setSortedNames (filterFirstLetter);
+  };
+  const allNames = () => {
+    setSortedNames (babyNamesData);
   };
 
   return (
@@ -83,7 +86,7 @@ const BabyNames = () => {
             placeholder="SEARCH HERE ..."
           />
         </div>
-        <div>
+        <div className="allNames">
           {/* <label>GIRLS NAMES</label> */}
           <img
             class="gender"
@@ -94,6 +97,7 @@ const BabyNames = () => {
           {/* <label>BOYS NAMES</label> */}
 
           <img class="gender" src={boy} alt="boys names" onClick={boysNames} />
+          <h3 onClick={allNames}>ALL</h3>
         </div>
         <div className="letters">
           <div

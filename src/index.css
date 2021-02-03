@@ -13,6 +13,22 @@ code {
 }
 .container {
 }
+.allNames {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.allNames h3 {
+  text-align: center;
+  background-color: #bd0e3a;
+  border-radius: 50%;
+  padding: 1.5rem 1rem;
+}
+.allNames h3:hover {
+  cursor: pointer;
+  color: white;
+}
+
 .letters {
   background-color: white;
   display: flex;
@@ -163,7 +179,7 @@ code {
   height: 10rem;
   background-color: blue;
   opacity: 0.5;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
 }
 
 .names {
