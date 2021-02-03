@@ -49,7 +49,7 @@ code {
   cursor: pointer;
 }
 .gender {
-  width: 5%;
+  width: 7rem;
   height: auto;
   margin: 0 2rem 0rem 0;
 }
@@ -179,7 +179,7 @@ code {
   height: 10rem;
   background-color: blue;
   opacity: 0.5;
-  margin-bottom: 10rem;
+  margin-bottom: 13rem;
 }
 
 .names {
@@ -194,7 +194,7 @@ input.searchBox {
   color: darkblue;
   font-size: large;
   margin-top: 3rem;
-  width: 40rem;
+  width: 30%;
   height: 3rem;
 }
 #names,
